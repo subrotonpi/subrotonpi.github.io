@@ -1,5 +1,8 @@
 /* Default css file for jemdoc. */
-
+div#container {
+	max-width: 60%;
+	margin: auto;
+  }
 table#tlayout {
     border: none;
     border-collapse: separate;
@@ -11,6 +14,7 @@ body {
 	font-family: Georgia, serif;
 	padding-bottom: 8px;
 	margin: 0;
+	
 }
 
 #layout-menu {
