@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subroto Nag Pinku</title>
+    <meta name="description" content="Subroto Nag Pinku — software engineer and researcher.">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 1.4;
+            color: #333;
+        }
+
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            max-width: 820px;
+        }
+
+        h1 {
+            font-size: 34px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-style: italic;
+            color: #999;
+            font-size: 18px;
+            margin: 5px 0 10px 0;
+        }
+
+        .links {
+            margin-top: 10px;
+        }
+
+        .links a {
+            margin-right: 15px;
+            color: #4183c4;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            height: 1px;
+            border: 0;
+            background-image: linear-gradient(to right,
+                rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+            margin: 25px 0;
+        }
+
+        .ctitle {
+            font-size: 36px;
+            margin: 40px 0 20px 0;
+        }
+
+        .entry {
+            display: grid;
+            grid-template-columns: 110px 16px 1fr;
+            column-gap: 15px;
+        }
+
+        .timespan {
+            text-align: right;
+            color: #bbb;
+            font-size: 14px;
+            padding-top: 1px;
+        }
+
+        .ico {
+            border-left: 2px solid #cfcfcf;
+            position: relative;
+        }
+
+        .entry-dot {
+            position: absolute;
+            top: 5px;
+            left: -8px;
+            width: 10px;
+            height: 10px;
+            border-radius: 7px;
+            background-color: #cfcfcf;
+            border: 2px solid white;
+        }
+
+        .desc {
+            font-size: 17px;
+            padding-left: 4px;
+            padding-bottom: 25px;
+        }
+
+        .desc .title {
+            font-weight: 600;
+        }
+
+        .desc p {
+            color: #555;
+        }
+
+        .desc p.fun {
+            color: #999;
+            font-style: italic;
+        }
+
+        .pub {
+            font-size: 14px;
+            border-left: 4px solid #aaa;
+            padding: 2px 0 2px 10px;
+            margin-bottom: 10px;
+        }
+
+        .pub-title {
+            display: inline;
+        }
+
+        .pub-title a {
+            color: #4183c4;
+            text-decoration: none;
+        }
+
+        .pub-title a:hover {
+            text-decoration: underline;
+        }
+
+        .pub-venue {
+            display: inline;
+            color: #090;
+            margin-left: 8px;
+        }
+
+        .pub-authors {
+            display: block;
+        }
+
+        details.pub {
+            border-left: 4px solid #aaa;
+            padding: 4px 0 4px 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        details.pub summary {
+            cursor: pointer;
+            color: #4183c4;
+            font-size: 15px;
+        }
+
+        details.pub summary:hover {
+            text-decoration: underline;
+        }
+
+        details.pub[open] summary {
+            color: #333;
+            text-decoration: none;
+        }
+
+        details.pub summary::before {
+            content: "▸ ";
+            color: #999;
+        }
+
+        details.pub[open] summary::before {
+            content: "▾ ";
+        }
+
+        .pub-body {
+            margin-top: 6px;
+            color: #333;
+        }
+
+        .pub-body .venue {
+            color: #090;
+            font-weight: 600;
+        }
+
+        @media (max-width: 640px) {
+            .entry {
+                grid-template-columns: 1fr;
+            }
+            .timespan {
+                text-align: left;
+                margin-bottom: 2px;
+            }
+            .ico {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Subroto Nag Pinku</h1>
+        <h2>I build agents that check chips — so I have time for photography.</h2>
+        <div class="links">
+            <a href="mailto:subroto.npi@gmail.com">email</a>
+            <a href="https://github.com/subrotonpi" target="_blank" rel="noopener">github</a>
+            <a href="https://www.linkedin.com/in/subrotonpi" target="_blank" rel="noopener">linkedin</a>
+            <a href="https://scholar.google.ca/citations?user=NHk8CM0AAAAJ&hl=en" target="_blank" rel="noopener">scholar</a>
+            <a href="https://twitter.com/subrotonpi" target="_blank" rel="noopener">twitter</a>
+            <a href="https://www.instagram.com/santiagosdiary/" target="_blank" rel="noopener">photography</a>
+        </div>
+
+        <hr>
+
+        <div class="ctitle">Experience</div>
+        <div class="entry">
+            <div class="timespan">2024 - present</div>
+            <div class="ico"><div class="entry-dot"></div></div>
+            <div class="desc">
+                <div class="title">Software Developer, Agentic AI — Siemens, Saskatoon</div>
+                <p>Building agentic AI and GenAI features for custom IC verification.</p>
+            </div>
+        </div>
+
+        <div class="ctitle">Old School</div>
+        <div class="entry">
+            <div class="timespan">2022 - 2024</div>
+            <div class="ico"><div class="entry-dot"></div></div>
+            <div class="desc">
+                <div class="title">M.Sc. Computer Science — University of Saskatchewan</div>
+                <p>Thesis on deep learning based clone detection.</p>
+                <p class="fun">Never missed Tim Hortons or a lecture, and I ran my experiments under the sky — the Saskatoon sun worked overtime and never billed me.</p>
+            </div>
+        </div>
+        <div class="entry">
+            <div class="timespan">2022 - 2024</div>
+            <div class="ico"><div class="entry-dot"></div></div>
+            <div class="desc">
+                <div class="title">Teaching Assistant — University of Saskatchewan</div>
+                <p>Undergraduate CS courses</p>
+                <p class="fun">Grading the same bugs I used to write.</p>
+            </div>
+        </div>
+        <div class="entry">
+            <div class="timespan">2021 - 2021</div>
+            <div class="ico"><div class="entry-dot"></div></div>
+            <div class="desc">
+                <div class="title">Adjunct Lecturer — BRAC University</div>
+                <p>Artificial Intelligence</p>
+                <p class="fun">Taught AI to a class that treated intelligence as an optional module.</p>
+            </div>
+        </div>
+        <div class="entry">
+            <div class="timespan">2016 - 2021</div>
+            <div class="ico"><div class="entry-dot"></div></div>
+            <div class="desc">
+                <div class="title">Lecturer — Daffodil International University</div>
+                <p>Programming (C, Java), Data Structures &amp; Algorithms, Compiler Design, Software Engineering, Database Systems, Computer Networks</p>
+                <p class="fun">Taught everything from pointers to parsers — and graded it all in red pen.</p>
+            </div>
+        </div>
+        <div class="entry">
+            <div class="timespan">2014 - 2016</div>
+            <div class="ico"><div class="entry-dot"></div></div>
+            <div class="desc">
+                <div class="title">Teaching Assistant — BRAC University</div>
+                <p>Programming fundamentals</p>
+                <p class="fun">First job: telling students to close their semicolons.</p>
+            </div>
+        </div>
+        <div class="entry">
+            <div class="timespan">2011 - 2016</div>
+            <div class="ico"><div class="entry-dot"></div></div>
+            <div class="desc">
+                <div class="title">B.Sc. Computer Science and Engineering — BRAC University</div>
+                <p>Graduated with high distinction.</p>
+                <p class="fun">And near-perfect absenteeism.</p>
+            </div>
+        </div>
+
+        <div class="ctitle">Publications</div>
+        <div class="pub">
+            <div class="pub-title"><a href="https://doi.org/10.1109/icsme58944.2024.00053" target="_blank" rel="noopener">On the Use of Deep Learning Models for Semantic Clone Detection</a></div>
+            <div class="pub-venue">ICSME 2024</div>
+            <div class="pub-authors">S. N. Pinku, D. Mondal, C. K. Roy</div>
+        </div>
+        <div class="pub">
+            <div class="pub-title"><a href="https://doi.org/10.1109/icpc58990.2023.00031" target="_blank" rel="noopener">Pathways to Leverage Transcompiler based Data Augmentation for Cross-Language Clone Detection</a></div>
+            <div class="pub-venue">ICPC 2023</div>
+            <div class="pub-authors">S. N. Pinku, D. Mondal, C. K. Roy</div>
+        </div>
+        <div class="pub">
+            <div class="pub-title"><a href="https://doi.org/10.1109/iwsc60764.2023.00012" target="_blank" rel="noopener">TransClone: A Language Agnostic Code Clone Detector</a></div>
+            <div class="pub-venue">IWSC 2023</div>
+            <div class="pub-authors">S. N. Pinku, D. Mondal, C. K. Roy</div>
+        </div>
+        <details class="pub">
+            <summary>TLNet: A Deep CNN Model for Prediction of Tomato Leaf Diseases</summary>
+            <div class="pub-body">
+                <div class="venue">ICCIT 2020</div>
+                <div>Md Afif Al Mamun, Dewan Ziaul Karim, Subroto Nag Pinku, Tasfia Anika Bushra</div>
+                <div><a href="https://doi.org/10.1109/iccit51783.2020.9392664" target="_blank" rel="noopener">doi:10.1109/iccit51783.2020.9392664</a></div>
+            </div>
+        </details>
+        <details class="pub">
+            <summary>A Novel Modified SFTA Approach for Feature Extraction</summary>
+            <div class="pub-body">
+                <div class="venue">ICEEICT 2016</div>
+                <div>Md Junayed Hasan, Jia Uddin, Subroto Nag Pinku</div>
+                <div><a href="https://doi.org/10.1109/ceeict.2016.7873115" target="_blank" rel="noopener">doi:10.1109/ceeict.2016.7873115</a></div>
+            </div>
+        </details>
+        <div style="margin-top: 10px;">
+            Also on <a href="https://scholar.google.ca/citations?user=NHk8CM0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
+
+        <div class="ctitle">Research Interests</div>
+        <div>Natural Language Processing, Software Engineering, Agentic AI</div>
+    </div>
+</body>
+</html>
